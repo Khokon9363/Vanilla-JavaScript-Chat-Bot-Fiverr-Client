@@ -25,6 +25,9 @@
     var nodes = new vis.DataSet([]);
     var edges = new vis.DataSet([]);
 </script>
+    <form id="phpForm" method="post">
+      <textarea hidden name="all_data" id="allData"></textarea>
+    </form>
     <section class="msger">
       <header class="msger-header">
         <div class="msger-header-title">
@@ -484,7 +487,7 @@
                             </div>
                             <div class='divider'></div>
                             <div class="center-align">
-                              <button class="btn green">Proces is compleet</button>
+                              <button class="btn green" onclick="complete()">Proces is compleet</button>
                               <p>Dit sluit deze stap af en vervolgt het consult</p>
                             </div>
                           </div>
@@ -1686,11 +1689,8 @@
             }
           </script>
           
-          <button onclick= "edgeconfirm()">Klik</button>
+          <button onclick= "edgeconfirm()"></button>
           <script src="https://scriptedconsultancy.com/js/juiste.js"></script>
-        </div>
-        <div class="msg left-msg" id="secondDiv">
-          
         </div>
       </main>
     </section>
